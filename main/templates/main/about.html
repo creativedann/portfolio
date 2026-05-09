@@ -1,0 +1,95 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+<div style="padding: 20px 0;">
+
+    <!-- Heading -->
+    <p style="color: #6c63ff; font-size: 16px;">About Me</p>
+    <h1 style="font-size: 45px; margin: 10px 0;">Who Am I? 🤔</h1>
+    <div style="width: 60px; height: 4px; background: #6c63ff; margin-bottom: 40px;"></div>
+
+    <!-- Bio Section -->
+    <div style="display: flex; gap: 50px; margin-bottom: 60px;">
+        
+        <div style="flex: 1;">
+            <h2 style="color: #6c63ff; margin-bottom: 15px;">My Story</h2>
+            <p style="color: #aaa; line-height: 1.8; margin-bottom: 15px;">
+                Main Muhammad Jann hoon — Sindh, Pakistan se. 
+                22 saal ki umra mein self-taught developer hoon 
+                aur tech entrepreneur banna chahta hoon! 🚀
+            </p>
+            <p style="color: #aaa; line-height: 1.8;">
+                AI, Robotics, aur Energy Solutions mein interest hai. 
+                Long term goal Japan mein settle hona hai! 🎌
+            </p>
+        </div>
+
+        <div style="flex: 1;">
+            <h2 style="color: #6c63ff; margin-bottom: 15px;">Quick Info</h2>
+            <table style="width: 100%; color: #aaa; line-height: 2;">
+                <tr>
+                    <td>📍 Location:</td>
+                    <td>Sindh, Pakistan</td>
+                </tr>
+                <tr>
+                    <td>🎂 Age:</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>🎓 Education:</td>
+                    <td>MUET (Upcoming)</td>
+                </tr>
+                <tr>
+                    <td>💼 Part-time:</td>
+                    <td>Salesman @ Him & Her</td>
+                </tr>
+                <tr>
+                    <td>🎌 Dream:</td>
+                    <td>Move to Japan</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Skills Section -->
+    <h2 style="font-size: 30px; margin-bottom: 30px;">My Skills 💻</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+
+        <div style="background: #111; padding: 20px; border-radius: 10px; border: 1px solid #222;">
+            <h3 style="color: #6c63ff; margin-bottom: 10px;">🐍 Python</h3>
+            <p style="color: #aaa; font-size: 14px;">OOP, File Handling, APIs</p>
+        </div>
+
+        <div style="background: #111; padding: 20px; border-radius: 10px; border: 1px solid #222;">
+            <h3 style="color: #6c63ff; margin-bottom: 10px;">🌐 Django</h3>
+            <p style="color: #aaa; font-size: 14px;">Backend, REST APIs, Database</p>
+        </div>
+
+        <div style="background: #111; padding: 20px; border-radius: 10px; border: 1px solid #222;">
+            <h3 style="color: #6c63ff; margin-bottom: 10px;">🎨 HTML/CSS</h3>
+            <p style="color: #aaa; font-size: 14px;">Frontend, Responsive Design</p>
+        </div>
+
+        <div style="background: #111; padding: 20px; border-radius: 10px; border: 1px solid #222;">
+            <h3 style="color: #6c63ff; margin-bottom: 10px;">🤖 AI</h3>
+            <p style="color: #aaa; font-size: 14px;">Gemini API, Python Integration</p>
+        </div>
+
+        <div style="background: #111; padding: 20px; border-radius: 10px; border: 1px solid #222;">
+            <h3 style="color: #6c63ff; margin-bottom: 10px;">🎮 Godot 4</h3>
+            <p style="color: #aaa; font-size: 14px;">Game Development, GDScript</p>
+        </div>
+
+        <div style="background: #111; padding: 20px; border-radius: 10px; border: 1px solid #222;">
+            <h3 style="color: #6c63ff; margin-bottom: 10px;">🐧 Linux</h3>
+            <p style="color: #aaa; font-size: 14px;">Linux Mint, Terminal</p>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

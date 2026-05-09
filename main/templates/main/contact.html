@@ -1,0 +1,77 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+<div style="padding: 20px 0;">
+
+    <p style="color: #6c63ff; font-size: 16px;">Get In Touch</p>
+    <h1 style="font-size: 45px; margin: 10px 0;">Contact Me 📬</h1>
+    <div style="width: 60px; height: 4px; background: #6c63ff; margin-bottom: 40px;"></div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+
+        <!-- Left Side — Info -->
+        <div>
+            <h2 style="color: #fff; margin-bottom: 20px;">Let's Talk! 🚀</h2>
+            <p style="color: #aaa; line-height: 1.8; margin-bottom: 30px;">
+                Koi project hai? Koi idea hai? 
+                Ya bas baat karni hai — main hamesha available hoon!
+            </p>
+
+            <div style="margin-bottom: 20px;">
+                <p style="color: #6c63ff; margin-bottom: 5px;">📧 Email</p>
+                <p style="color: #aaa;">muhammadjann@gmail.com</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <p style="color: #6c63ff; margin-bottom: 5px;">📍 Location</p>
+                <p style="color: #aaa;">Sindh, Pakistan</p>
+            </div>
+
+            <div>
+                <p style="color: #6c63ff; margin-bottom: 5px;">🎌 Dream Location</p>
+                <p style="color: #aaa;">Japan</p>
+            </div>
+        </div>
+
+        <!-- Right Side — Form -->
+        <div style="background: #111; padding: 30px; border-radius: 10px; border: 1px solid #222;">
+            <form method="POST">
+                {% csrf_token %}
+
+                <div style="margin-bottom: 20px;">
+                    <label style="color: #aaa; display: block; margin-bottom: 8px;">Your Name</label>
+                    <input type="text" name="name" placeholder="Ali Khan"
+                        style="width: 100%; padding: 12px; background: #1a1a1a; border: 1px solid #333; 
+                               border-radius: 6px; color: white; font-size: 15px; box-sizing: border-box;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="color: #aaa; display: block; margin-bottom: 8px;">Email</label>
+                    <input type="email" name="email" placeholder="ali@gmail.com"
+                        style="width: 100%; padding: 12px; background: #1a1a1a; border: 1px solid #333; 
+                               border-radius: 6px; color: white; font-size: 15px; box-sizing: border-box;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="color: #aaa; display: block; margin-bottom: 8px;">Message</label>
+                    <textarea name="message" placeholder="Tumhara message..."
+                        style="width: 100%; padding: 12px; background: #1a1a1a; border: 1px solid #333; 
+                               border-radius: 6px; color: white; font-size: 15px; 
+                               height: 120px; resize: none; box-sizing: border-box;"></textarea>
+                </div>
+
+                <button type="submit"
+                    style="width: 100%; padding: 12px; background: #6c63ff; color: white; 
+                           border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+                    Send Message 🚀
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
