@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="grid md:grid-cols-3 gap-8">
+    <div class="md:col-span-2 brutal-card p-8 bg-white">
+        <h2 class="text-4xl font-black uppercase mb-6 underline decoration-yellow-400">My Story</h2>
+        <p class="text-lg font-bold mb-4">Main Muhammad Jann hoon — Sindh, Pakistan se. 22 saal ki umra mein self-taught developer hoon!</p>
+        <p class="text-gray-700 mb-6">AI, Robotics, aur Energy Solutions mein interest hai. Mera long-term goal Japan mein settle hona aur wahan tech dunya mein naam banana hai.</p>
+        
+        <div class="grid grid-cols-2 gap-4">
+            <div class="border-2 border-black p-4 bg-gray-50">
+                <p class="text-xs uppercase font-black text-gray-400">📍 Location</p>
+                <p class="font-bold">Sindh, Pakistan</p>
+            </div>
+            <div class="border-2 border-black p-4 bg-gray-50">
+                <p class="text-xs uppercase font-black text-gray-400">💼 Part-time</p>
+                <p class="font-bold">Salesman @ Him & Her</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="brutal-card p-8 bg-blue-500 text-white">
+        <h2 class="text-3xl font-black uppercase mb-6">Skills 💻</h2>
+        <ul class="space-y-3 font-bold">
+            <li class="bg-black p-2 border-2 border-white">🐍 Python (OOP, APIs)</li>
+            <li class="bg-black p-2 border-2 border-white">🌐 Django (Backend, DB)</li>
+            <li class="bg-black p-2 border-2 border-white">🎨 HTML/CSS</li>
+            <li class="bg-black p-2 border-2 border-white">🤖 AI (Gemini API)</li>
+            <li class="bg-black p-2 border-2 border-white">🐧 Linux Mint</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

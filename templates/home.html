@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="grid md:grid-cols-2 gap-8 items-center py-10">
+    <div class="brutal-card p-10 bg-white">
+        <span class="bg-blue-600 text-white px-3 py-1 font-bold uppercase text-xs">👋 Assalam o Alaikum</span>
+        <h1 class="text-6xl md:text-8xl font-black leading-none mt-4 mb-6 uppercase">
+            I'M <br> <span class="bg-yellow-400">MUHAMMAD JANN</span>
+        </h1>
+        <p class="text-xl font-bold border-l-8 border-black pl-4 mb-10">
+            Python Developer & Future Tech Entrepreneur 🚀 <br>
+            <span class="text-gray-500">Sindh, Pakistan ➔ Future Japan 🎌</span>
+        </p>
+        <div class="flex gap-4">
+            <a href="/projects" class="brutal-btn">My Projects →</a>
+            <a href="/contact" class="brutal-btn bg-blue-400 text-white">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Your Image Section -->
+    <div class="relative">
+        <div class="absolute inset-0 bg-blue-500 border-4 border-black translate-x-4 translate-y-4 -z-10"></div>
+        <img src="{% static 'images/profile.jpg' %}" alt="Muhammad Jann" class="border-4 border-black w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-500">
+    </div>
+</div>
+{% endblock %}
